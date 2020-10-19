@@ -3,7 +3,7 @@ from pyspark.sql import DataFrame
 from pyspark.sql import functions as func
 
 
-df = loadCSVfrom(file_path="/Users/haogong/Desktop/btc_monitor/data/btc.csv")
+df = loadCSVfrom(file_path="data/btc.csv")
 # def aggregrateBlocks(df: DataFrame):
 #     df.agg(func.sum("blockCount"))
 # print("total record count: %d" % (df.count()))
@@ -30,3 +30,4 @@ showBlocksize(df)
 #         .sort(func.year("date"), func.month("date")) \
 #         .filter(func.year(df["date"]) == "2009") \
 #         .show()
+
